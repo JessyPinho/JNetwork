@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans");
+
+#ask-text-question-container {
+  background-color: #fff;
+	padding: 2em 1em;
+	border-radius: 15px;
+  margin-left: -7%;
+}
+
+.first-step-question-text {
+  flex-direction: column;
+  border-radius: 15px;
+  width: 70vw;
+  display: flex;
+  font-style: normal;
+  padding: 1em 2em;
+  background-color: white;
+}
+.first-step-question-text h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'DM Sans';
+  width: 85%;
+  color: #1B2559;
+  font-family: 'DM Sans';
+}
+.question-more-infos__label {
+	margin-top: 1em;
+}
+
+.ask-text-question-field {
+	min-width: 35vw;
+	min-height: 200px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin: 1em 0 2em 0;
+}
+
+.record-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#video {
+
+}
+.webcam {
+  border-radius: 15px;
+}
+
+#recap-text-question {
+  width: 100%;
+  height: 150px;
+  padding: 7px;
+  margin-top: 15px;
+  color: #1B2559;
+  font-size: 22px;
+  border-radius: 15px;
+  border: 1px solid #ababab;
+}
+
+@media screen and (max-width: 600px) {
+  
+}

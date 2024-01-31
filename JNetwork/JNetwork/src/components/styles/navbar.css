@@ -1,0 +1,230 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  display: flex; 
+  justify-content: center;
+  padding-left: 180px;
+  z-index: 5;
+  background-color: transparent !important;
+}
+#navbar h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: -10%;
+  margin-right: 15px;
+  z-index: 5;
+}
+
+#navbar-content {
+  width: 70%; height: 60px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+/*****************/
+/* The Searchbar */
+/*****************/
+
+#navbar-search-input {
+  width: 70%;
+}
+
+#navbar-search-input form {
+  display: flex;
+}
+
+/* input of the searchbar */
+#navbar-search-input input {
+  width: 100%;
+  border: 1px solid #b8b7b7;
+  border-radius: 15px;
+  padding: 3px 7px;
+  margin-right: 20px;
+}
+
+/* research & reset btns */
+#navbar-search-input button {
+  margin: 0 10px;
+}
+
+#navbar-search-input svg {
+  width: 12px;
+  height: 12px;
+}
+
+/***************/
+/* The results */
+/***************/
+#searchbar-results {
+  position: absolute;
+  top: 80px;
+
+  max-width: 75vw;
+  min-width: 50vw;
+  max-height: 75vh;
+
+  overflow: auto;
+
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 4px 1px #808080;
+}
+
+#searchbar-results ol {
+  list-style-type: none;
+}
+
+#searchbar-results li {
+  border-radius: 15px;
+  padding: 7px 5px;
+}
+
+#searchbar-results li:nth-child(2n) {
+  background-color: #e5fffa;
+}
+
+#searchbar-results li:hover {
+  background-color: #cae2dd;
+}
+
+/* In each li there is a title & a description */
+.searchbar-response-title {
+  font-weight: 600;
+}
+
+.ais-Highlight-highlighted {
+  background-color: #81ffed;
+  border-radius: 7px;
+  padding: 0 1px;
+}
+
+/**************/
+/* whats left */
+/**************/
+
+#top-right-options {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.coinCount {
+  margin-right: 20px;
+  width: 100px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#toggle-dark-mode {
+  margin-left: 5px;
+  width: 40px; 
+  height: 40px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+
+/* DROPDOWN MENU */
+
+/* Profile picture */
+#navbar-profile-pic {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    display: flex; 
+    justify-content: center;
+    padding-left: 80px;
+    z-index: 5;
+    background-color: transparent !important;
+  }
+  #navbar h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: -10%;
+    margin-right: 15px;
+    z-index: 5;
+  }
+  
+  #navbar-content {
+    width: 85%; height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+  
+  #navbar-searchbar {
+    width: 60%;
+  }
+  
+  #searchbar-input {
+    border-radius: 25px ;
+    height: 40px;
+  }
+  
+  #top-right-options {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+  
+  .coinCount {
+    margin-right: 20px;
+    width: 100px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #toggle-dark-mode {
+    margin-left: 5px;
+    width: 40px; 
+    height: 40px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  
+  /* DROPDOWN MENU */
+  
+  /* Profile picture */
+  #navbar-profile-pic {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #navbar {
+    padding-left: 0;
+  }
+}

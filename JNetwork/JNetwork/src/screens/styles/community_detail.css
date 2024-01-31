@@ -1,0 +1,104 @@
+#community-detail {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F7FE;
+}
+
+.generic-back-header{
+  margin-top: 20px;
+  height: fit-content;
+}
+
+#community-detail main {
+  margin: 70px 0 35px 180px;
+  padding: 0 50px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+#community-detail-details {
+  display: flex;
+  flex-direction: column;
+}
+
+#community-detail-text-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0 50px 0;
+}
+
+/* Username */
+#community-detail-text-info__user {
+  display: flex;
+  flex-direction: column;
+}
+
+.community-detail-text-info__username {
+  width: 300px;
+}
+.community-detail-text-info__skills {
+
+}
+
+#community-detail-text-info__company {
+  display: flex;
+  flex-direction: column;
+}
+
+#community-detail-text-info__company span {
+  font-weight: 600;
+}
+
+.community-detail-text-info__company-sector {
+  width: 300px;
+}
+
+#community-detail-details video {
+  max-height: 500px;
+  background-color: #616161;
+}
+
+/* Link to user profile */
+#community-detail-details a {
+  margin: 40px 0 0 auto;
+}
+
+#community-detail-details button {
+  background-color: #4318FF;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 3px 1px #000;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  #community-detail main {
+    margin: 70px 0 35px 80px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #community-detail main {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  #community-detail main {
+    padding: 0 10px;
+  }
+
+  #community-detail-text-info {
+    flex-direction: column;
+  }
+
+  .community-detail-text-info__ro-input {
+    width: 100%;
+  }
+}

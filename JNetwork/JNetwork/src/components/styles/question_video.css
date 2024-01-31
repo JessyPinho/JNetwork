@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans");
+
+
+
+.first-step-question-video p {
+  display: flex;
+  align-items: center;
+}
+.first-step-question-video h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'DM Sans';
+  width: 85%;
+  color: #1B2559;
+}
+
+.record-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#video-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-coins {
+  display: flex;
+  background-color: #E0E5F2;
+  margin-left: 20px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  width: fit-content;
+  font-size: 1rem;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.record-coins-icon {
+	width: 24px;
+  margin-top: 1px;
+  height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+	padding: 2px;
+	background-color: #fff;
+	border-radius: 25px;
+}
+
+.record-btn {
+  font-size: 1rem;
+  padding: 5px 15px 5px 15px;
+  background-color: rgba(66, 133, 244, 0.66);
+  border-radius: 16px;
+  color: white;
+  font-family: 'DM Sans';
+  font-style: normal;
+}
+
+.third-step-question video{
+  border-radius: 15px;
+  margin: auto;
+}
+
+/* Texte explicatif - Création vignette */
+#explain-create-thumbnail {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .record-coins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E5F2;
+    margin-left: 20px;
+    border-radius: 25px;
+    width: fit-content;
+    font-size: 1rem;
+    margin-top: auto;
+    font-weight: 600;
+  }
+  
+  .record-coins-icon {
+    width: 24px;
+    margin-top: 1px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 25px;
+  }
+  .third-step-question video{
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+  }
+  #explain-create-thumbnail {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}

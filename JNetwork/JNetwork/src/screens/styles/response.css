@@ -1,0 +1,107 @@
+#response-content {
+  margin: 80px 0 0 180px;
+}
+
+.generic-back-header {
+  display: flex;
+  align-items: center;
+  padding: 0 1vw;
+  font-size: 1.1rem;
+  color: #535353;
+  cursor: pointer;
+}
+
+.generic-back-header svg {
+  margin-top: 2px;
+}
+
+.responseHeader {
+  font-size: 1.2rem;
+  width: fit-content;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 4%;
+  text-decoration: underline;
+}
+.title {
+  margin-top: 20px;
+  font-weight: bold;
+  margin-left: 4%;
+  word-spacing: normal
+}
+.responseInfo {
+  display: flex;
+  margin: 0 4%;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #575757;
+}
+.responseDate {
+  margin-left: 5%;
+}
+#response-content {
+  margin-left: 200px;
+  margin-top: 90px;
+}
+.User {
+}
+#response-container header span {
+  margin-left: 5px;
+}
+#response-field {
+  display: flex;
+  width: 90%;
+  height: 40vh;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+#response-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#response-text-area {
+  display: flex;
+  margin-top: 35px;
+  padding: 5px 6px 5px 5px;
+  font-size: 16px;
+  width: 90%;
+  height: 30vh;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#response-text p {
+  align-self: flex-start;
+  margin-left: 75px;
+  margin-top: 2vh;
+}
+
+.responseWebcam {
+  width: 50%;
+}
+
+.bottom-page {
+  width: fit-content;
+  margin: 35px auto 0 auto;
+}
+
+.submit-response {
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  background-color: #9f3333;
+  color: #212121;
+  border-radius: 5px;
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+  #response-content {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,13 @@
+.parametres__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -10%;
+    margin-left: 50%;
+}
+.parametres__main h1 {
+    font-size: 30px;
+    font-weight: bold;
+}

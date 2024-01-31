@@ -1,0 +1,10 @@
+.screen-record-preview {
+	width: 50vw;
+	border: 1px solid #949494;
+	border-radius: 15px;
+}
+
+.screen-record-preview video {
+	width: 100%;
+	border-radius: 15px;
+}

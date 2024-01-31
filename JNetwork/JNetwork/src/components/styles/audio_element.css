@@ -1,0 +1,45 @@
+
+
+#audio-elemnent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.step-two-audio-record {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #00000042;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 1px #000;
+}
+
+
+.step-two-audio-record:active {
+  box-shadow: inset -1px -1px 5px 1px #000;
+}
+
+
+.step-two-audio-record audio {
+  position: absolute;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.step-two-audio-record  svg {
+  font-size: 100px;
+}
+
+
+@media screen and (max-width: 750px) {
+  .step-two-audio-record audio {
+    opacity: 1;
+  }
+}

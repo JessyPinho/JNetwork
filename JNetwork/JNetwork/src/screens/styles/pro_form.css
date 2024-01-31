@@ -1,0 +1,108 @@
+#proform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F4F7FE;
+  min-height: 100vh;
+}
+
+
+#proform main {
+  margin: 80px 0 40px 180px;
+  padding: 0 50px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
+
+/* Main title (h2 tag) */
+#proform-head-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 25px 0 30px 10%;
+}
+
+
+/* Container for all our Label-input pairs */
+#settings-form-pro-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+
+/* Label & input containers */
+.settings-form-pro-input {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 50%;
+  max-width: 600px;
+
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+
+  border-radius: 10px;
+  font-size: .95rem;
+}
+
+/* labels */
+.settings-form-pro-input label {
+  font-weight: 600;
+}
+/* inputs */
+.settings-form-pro-input input {
+  max-width: 450px;
+  margin-top: 20px;
+  border-bottom: 1px solid #d4d4d4;
+  outline: 0;
+}
+
+.settings-form-pro-input input:focus {
+  border-bottom: 1px solid #000;
+}
+
+
+/* Links and notes */
+.settings-form-pro-input p {
+  font-size: .9em;
+}
+
+.proform-link{
+  color: #0e6ece;
+  text-decoration: underline;
+}
+
+.proform-note {
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #proform main {
+    margin: 80px 0 0 80px;
+  }
+}
+
+
+
+@media screen and (max-width: 750px) {
+  #proform main {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #proform main {
+    padding: 0 10px;
+  }
+
+  #settings-form-pro-container {
+    margin-left: 0;
+  }
+
+  #proform main form {
+    margin-left: 0;
+  }
+}

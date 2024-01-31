@@ -1,0 +1,486 @@
+#settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F4F7FE;
+  min-height: 100vh;
+}
+
+#settings main {
+  margin: 80px 180px 0 180px;
+  padding: 0 50px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
+#settings main h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 25px 0 0px 5%;
+}
+
+/* Button to go to the PRO from */
+#to-proform-btn {
+	background-color: #4318FF;
+	color: #fff;
+	margin: 20px 0px 0px 5%;
+    padding: 5px 15px;
+	border-radius: 25px;
+	box-shadow: 0 0 3px 1px #8c8c8c;
+}
+
+.job__textBox {
+	width: 40vw;
+    max-width: 500px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
+
+/* Container in main that'll hold the inputs */
+#settings-form-container {
+	display: flex;
+	flex-direction: column;
+	min-width: 60vw;
+}
+
+#profile-settings-card {
+	margin-bottom: 50px;
+	background-color: #fff;
+}
+
+
+/* moreinfos */
+
+#add-profile-info__head {
+	display: flex;
+	margin-bottom: 1.6rem;
+	font-weight: 600;
+}
+
+#add-profile-info__head h3 {
+    font-weight: 600;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: 1px solid #a6a6a6;
+}
+
+#add-profile-info__head svg {
+	font-size: 1.3rem;
+	position: relative;
+	top: 0.1rem;
+	color: #5d5d5d;
+	cursor: pointer;
+}
+
+/* Card container */
+#add-profile-info_infos {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 20px;
+}
+
+#add-profile-info_infos .moreinfo-card {
+	position: relative;
+}
+
+/*	CSS for the cards is in "profile.css"
+		Add this css for "delete" icon	 
+*/
+.moreinfo-card svg {
+	position: absolute;
+	right: .8rem; top: .4rem;
+	color: #8a8a8a;
+	cursor: pointer;
+}
+
+.moreinfo-card svg:hover {
+	color: #000;
+}
+
+/******************/
+/* ADD INFO POPUP */
+/******************/
+
+#add-info-popup {
+	position: absolute;
+	top: 30%;
+	left: 47%;
+	width: 240px;
+	height: 275px;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+	border-radius: 15px;
+	padding: 20px 25px;	
+}
+
+/* Cancel icon */
+#add-info-popup svg {
+	margin-left: auto;
+	position: relative;
+	top: -5px;
+	left: 5px;
+	cursor: pointer;
+}
+
+/* select & input form key: value info */
+#add-info-popup form {
+	position: relative;
+}
+
+#add-info-popup label {
+	font-size: 1rem;
+}
+
+#input-add-value {
+	width: 190px;
+	border: 1px solid #c5c5c5;
+	border-radius: 10px;
+	padding-left: .5rem;
+	margin: 20px 0;
+}
+
+
+
+
+/* Profile info */
+
+.profile__card__bannière {
+    padding: 10px;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 50px;
+}
+/* Profile Picture */
+#profilesettings-pic-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-top: -15px;
+}
+
+/* label tag */
+#profile-pic-container {
+    height: 80px; width: 80px;
+
+    position: relative;
+    display: inline-block;
+}
+
+/* displayed element (input area) */
+.profile-settings__avatar {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+
+/* Input type=file (hidden) */
+#profile-pic {
+    width: 0; height: 0;
+    opacity: 0;
+}
+
+/* End of input type=file */
+
+.profile__settings__card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+}
+.profile__name {
+    color: #2B3674;
+    font-weight: 700;
+    font-size: 22px;
+}
+.profile__profession {
+    color: #A3AED0;
+    font-size: 16px;
+}
+.profile__card__coins {
+  display: flex;
+  background-color: #E0E5F2;
+  padding: 3px 30px 3px 4px;
+  border-radius: 25px;
+  width: fit-content;
+  font-size: .75rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.profile__card__coins-icon {
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.profile__card__coins p {
+    color: #2B3674;
+    margin-top: 1px;
+}
+
+
+
+.community__thumbnail-coins {
+  display: flex;
+  background-color: #E0E5F2;
+  padding: 3px 8px 3px 4px;
+  border-radius: 25px;
+  width: fit-content;
+  font-size: .75rem;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.community__thumbnail-coins-icon {
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.community__thumbnail-coins span {
+    margin-top: 1px;
+}
+
+
+
+
+/****************/
+/* SKILLS CARDS */
+/****************/
+
+/* Profile infos */
+.profile_settings__infos {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+}
+.profile_settings__infos h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: #2B3674;
+    text-align: center;
+}
+.profile_settings__infos p {
+    padding-left: 5px;
+    font-size: 16px;
+    color: #A3AED0;
+}
+
+/* Top part of the settings (situation and description) */
+.settings-top {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* The other inputs */
+.settings-form-container__input {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-left: 5%;
+	margin-bottom: 35px;
+
+}
+
+.settings-situation {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.job__textBox {
+	width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
+
+.settings-form-container__label {
+	margin-left: 5px;
+	text-decoration: underline;
+	text-decoration-color: #a5a5a5;
+}
+
+.user-profile-desc {
+	width: 100%;
+	min-height: 175px;
+	margin-top: 16px;
+	padding: 5px;
+	margin-bottom: 8px;
+	border: 1px solid #000;
+	border-color: rgba(0, 0, 0, 0.23);
+	border-radius: 5px;
+}
+
+.settings-form-container__input button {
+	background-color: rgba(66, 133, 244, 0.66);
+	width: fit-content;
+	padding: 3px 15px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+#settings-form-container-submit-btn {
+	margin-left: 10px;
+	margin-top: -2px;
+}
+#profile__infos_form {
+	width: 100%;
+}
+/* Card container */
+#profile__settings-cards-container {
+	padding: none;
+	width: 100%;
+    margin-top: 20px;
+	display: grid;
+    grid-template-columns: repeat(2, 48%);
+	margin-left: 5%;
+    grid-gap: 20px;
+}
+#profile__settings-cards-container div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+#profile__settings-cards-container label {
+	font-size: 1.75vmin;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#select-add-info {
+	width: 75%;
+	border: 1px solid #4790FF;
+	border-radius: 8px;
+}
+
+.add-info-input {
+	border: 1px solid #4790FF;
+	border-radius: 8px;
+	width: 75%;
+	padding-left: 5px;
+	background: transparent;
+}
+
+#submit-profile-info {
+	margin-top: 20px;
+	float: right;
+	border-radius: 15px;
+	background-color: #4790FF;
+	width: 35%;
+}
+
+
+/* End of skills cards */
+@media screen and (min-width: 1500px) {
+    #settings-form-container {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+    
+    #profile-settings-card {
+        position: relative;
+        margin-bottom: 50px;
+        width: 40vw;
+        background-color: #fff;
+    }
+    #profilesettings-pic-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 4px solid white;
+        border-radius: 50%;
+        margin-top: -15px;
+    }
+}
+
+@media screen and (min-width: 1200px, max-width: 1500px) {
+    #settings-form-container {
+        width: 40vw;
+    }
+    
+    #profile-settings-card {
+        position: relative;
+        width: 30vw;
+    }
+    #profilesettings-pic-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 4px solid white;
+        border-radius: 50%;
+        margin-top: -15px;
+    }
+}
+
+/* Update margin to match the new width of sidebar */
+@media screen and (max-width: 1200px) {
+	#settings main {
+  	    margin: 80px 0 0 80px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+  #settings main {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    #profilesettings-pic-wrapper {
+        transform: translate(-0%, -50%);
+    }
+}
+
+/* Phone design */
+@media screen and (max-width: 550px) {
+	#settings main {
+		padding: 0 10px;
+	}
+	#settings main h2 {
+        font-size: 4.5vw;
+		text-align: center;
+	}
+    .profile_settings__infos h2 {
+        font-size: 3vw;
+        font-weight: bold;
+        padding-bottom: 15px;
+        color: #2B3674;
+        text-align: center;
+    }
+	#profile__settings-cards-container {
+		grid-template-columns: repeat(1, 100%);
+		margin-left: 0;
+	}
+
+	#profile__settings-cards-container label {
+		font-size: .75rem;
+	}
+}

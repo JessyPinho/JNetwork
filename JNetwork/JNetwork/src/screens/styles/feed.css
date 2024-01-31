@@ -1,0 +1,247 @@
+:root {
+  --main-btn-color: #00ffff;
+}
+
+
+
+#feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F4F7FE;
+}
+
+
+#feed main {
+  margin: 70px 0 0 180px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin-right: auto;
+}
+
+/*******************/
+/*   SEARCH BAR    */
+/*   not working   */
+/* only style here */
+/*******************/
+
+#search-question {
+  margin: 3rem 0 2rem 0;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+#search-question__input {
+  font-size: 1.3rem;
+  padding: 2px 8px;
+  border-radius: 8px;
+  border: 1px solid #5252527d;
+}
+
+#search-question__btn {
+  font-size: 1.3rem;
+  padding: 1px 8px;
+  background-color: var(--main-btn-color);
+  border-radius: 8px;
+  margin-left: 30px;
+  border: 1px solid #000000b0;
+}
+
+/*******************/
+/* BIG BLUE HEADER */
+/*******************/
+
+#feed-main-header {
+  width: 95%;
+  background-image: url("./../../img/feed_bg_head.png");
+  margin: 25px auto 0 auto;
+  color: #fff;
+  background-position: bottom;
+  height: 329px;
+  border-radius: 25px;
+}
+
+#feed-main-header__text {
+  width: 50%;
+  padding: 30px 50px;
+}
+
+#feed-main-header__text h3 {
+  line-height: 2.2rem;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+
+
+#filters-and-button {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  width: 95%;
+  margin: 20px 0 20px 20px;
+}
+
+/***********/
+/* FILTERS */
+/***********/
+
+#feed-filters {
+  font-size: .85rem;
+}
+
+.single-filter {
+  width: 6rem; 
+  height: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.single-filter__clickable {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+
+  color: #4318FF;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.single-filter__input {
+  opacity: 0;
+  width: 0; 
+  height: 0;
+}
+/*
+.single-filter__input:checked + .single-filter__clickable {
+  background-color: #E0E5F2;
+}
+*/
+
+/**************************/
+/* To the QUESTION screen */
+/**************************/
+
+
+#ask-question-btn {
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+#question-btn {
+  padding: 4px 20px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #4318FF;
+  color: white;
+  box-shadow: 0px 0px 10px 0px gray;
+}
+
+/*
+#question-btn-aside {
+  margin-right: 20px;
+  padding-top: 4px;
+}
+*/
+
+/******************/
+/*  ACTUAL FEED   */
+/******************/
+
+#all-questions {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  padding: 0 20px;
+  margin-bottom: 200px;
+}
+
+/* <a> tag */
+.question-link {
+}
+
+@media screen and (max-width: 600px) {
+  
+  #feed main {
+    margin: 70px 0 0 80px;
+  }
+
+  #search-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #feed-main-header {
+    display: none;
+  }
+
+  #filters-and-button {
+    flex-direction: column;
+  }
+
+  #feed-filters {
+    font-size: .85rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #ask-question-btn {
+    margin-top: 25px;
+  }
+
+  #search-question__btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #all-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/*///////////////////*/
+/* RESPONSIVE DESIGN */
+/*///////////////////*/
+
+@media screen and (max-width: 1200px) {
+  #community main {
+    margin: 70px 0 40px 80px;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  #feed main {
+    margin-left: 0;
+  }
+
+  #filters-and-button {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+   #feed-main-header {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 385px) {
+  #feed-main-header__text {
+    padding: 0;
+  }
+}

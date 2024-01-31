@@ -1,0 +1,103 @@
+
+.community-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+
+  width: 270px;
+  padding: 15px;
+}
+
+.community__thumbnail-image-container {
+  position: relative;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+.community__thumbnail-image {
+  width: 245px;
+  height: 135px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.community__thumbnail-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+}
+
+.community__thumbnail-user-info {
+
+}
+
+.community__thumbnail-user-info h4 {
+  font-weight: 600;
+}
+
+.community__thumbnail-poster-skills {
+  font-style: italic;
+  color: #4c4c4cde;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.community__thumbnail-coins {
+  display: flex;
+  background-color: #E0E5F2;
+  padding: 3px 8px 3px 4px;
+  border-radius: 25px;
+  width: fit-content;
+  font-size: .75rem;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.community__thumbnail-coins-icon {
+	width: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+	padding: 2px;
+	background-color: #fff;
+	border-radius: 25px;
+}
+
+.community__thumbnail-coins span {
+	margin-top: 1px;
+}
+
+.community__thumbnail-company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: .75rem;
+}
+
+.community__thumbnail-company-info h5 {
+  text-align: end;
+  width: min-content;
+}
+
+.community__thumbnail-company-info a {
+  margin-top: auto;
+}
+
+.community__thumbnail-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: fit-content;
+  padding: 0 10px 2px 10px;
+
+  border-radius: 25px;
+  background-color: #11047a;
+  color: #fff;
+}

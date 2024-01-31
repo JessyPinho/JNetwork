@@ -1,0 +1,105 @@
+#community {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F7FE;
+}
+
+
+#community main {
+  margin: 70px 0 40px 180px;
+  padding: 0 50px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+#community-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 20px 0;
+}
+
+#community-header h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2b3674;
+}
+
+/* Filters */
+.community-filter {
+
+}
+
+.community-filter-input {
+
+}
+
+.community-filter-display {
+
+}
+
+
+/* Videos de Presentation */
+#community-video-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+
+/*//////////////////////////////////////*/
+/* THIS IS THE STYLE FOR EACH THUMBNAIL */
+/*//////////////////////////////////////*/
+
+
+/*//////////////////*/
+/* END OF THUMBNAIL */
+/*//////////////////*/
+
+
+
+/*///////////////////*/
+/* RESPONSIVE DESIGN */
+/*///////////////////*/
+
+@media screen and (max-width: 1400px) {
+  #community main {
+    margin-left: 10%;
+  }
+  #community-header h3 {
+    margin-left: 10%;
+  }   
+  #community-video-container {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+    #community main {
+      margin: 70px 0 0 80px;
+    }
+    #community-header h3 {
+      margin-left: 11%;
+    }  
+    #community-video-container {
+      grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 750px) {
+  #community main {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #community main {
+    padding: 0;
+  }
+
+  #community-video-container {
+    grid-template-columns: repeat(1, auto);
+  }
+}
